@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Young Sheldon Cooper coloured icon.ico" type="image/x-icon">
-    <title>itux</title>
-    
+  <meta charset="UTF-8" />
+  <title>Plyr Video Example</title>
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
 </head>
 <body>
- 
+
+  <video id="player" playsinline controls>
+    <source src="
+https://s01.drop.download:182/d/ghcrdgsa4uco3ai4g6t4jxi7yuzbgz5mvsom453r25ozj4i4gwj6nn5n7pdaw7y6fov3lvyd/M7_Clash_DOU.mp4" type="video/mp4" />
+  </video>
+
+  <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+  <script>
+    const player = new Plyr('#player');
+  </script>
+
 </body>
 </html>
